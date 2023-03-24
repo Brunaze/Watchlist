@@ -9,10 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor @AllArgsConstructor @Data
-@Entity
-public class SerieVu {
+public class SerieVu extends Serie{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id_vu;
+    private boolean statusVu;
 }

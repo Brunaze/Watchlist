@@ -9,10 +9,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor @AllArgsConstructor @Data
-@Entity
-public class SerieAVoir {
+public class SerieAVoir extends Serie {
 
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id_avoir;
+    private boolean statusAVoir;
 
 }

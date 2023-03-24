@@ -9,9 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor @AllArgsConstructor @Data
-@Entity
-public class SerieEnCours {
+public class SerieEnCours extends Serie{
 
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id_encours;
+    private boolean statusEnCours;
 }
