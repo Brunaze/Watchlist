@@ -20,8 +20,11 @@ public class UtilisateurRest {
         return utilisateurRepos.findAll();
     }
 
+    /*
     @PostMapping("/login")
     public Optional<Utilisateur> getUtilisateurByUsernameAndPassword(@RequestBody Utilisateur u){
         return utilisateurRepos.findUtilisateurByUsernameAndPassword(u.getUsername(),u.getPassword());
     }
+
+     */
 }
